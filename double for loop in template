@@ -1,0 +1,10 @@
+<div v-for="(value, key) in AnswerSheet">
+        <obg-list-item v-for="(values, keys) in value">
+          <div class="text category">{{key}}</div> 
+          <div class="text">{{keys}}</div> 
+          <div class="text">{{ActualResult(key, keys)}}</div>
+          <div class="text">{{values}}</div>
+          <div v-if="compare(values, ActualResult(key,keys))==true" class="text result" style="color:deepskyblue;">Pass</div>
+          <td v-else class="text result" style="color:deeppink;">Fail</td>
+        </obg-list-item>
+      </div>
