@@ -1,0 +1,75 @@
+{
+  "ApplicationFramework":{
+    "getVersion":"1.4.5.RNBS01R1\n",
+    "getResourceVersion":"1.1.906\n",
+    "getWebLauncherVersion":"1.2.17",
+    "getConnectivityActivationStatus":true
+    },
+  "Util":{
+    "getOSVersion":"Linux-4.4.0-31-generic",
+    "getDeviceModel":"renault7p",
+    "getAmbientColor":"rgb(0,120,240)",
+    "getLanguage":"en-gb",
+    "getLoggingLevel":1,
+    "getBaseUrl":""
+  },
+  "WidgetDescriptor":{
+    "id":"http://www.obigo.com/widget_id/f2ab7f2b71b97577ca9a029afafaffaf4",
+    "version":"1.1.1",
+    "nameList":{ "widgetName": [ { "name": "apiTest5(launcher)", "lang": "en-us" } ] },
+    "shortNameList":{ "widgetShortName": [ ] },
+    "authorName":"Sunnie",
+    "authorEmail":"Frank.koo@obigo.com",
+    "authorHref":"",
+    "license":"Sunnie",
+    "licenseHref":"",
+    "iconSrcPath":"icon.png",
+    "description":"My sample application",
+    "localURI":"file:///home/oad/OAD/OAF/AFAsset/apps/contents/private/http___www_obigo_com_widget_id_287bbdf0b6bf7f11ba96d8b158e77eb7_2117782282/",
+    "group":"system",
+    "featureList":{ "feature": [ { "name": "http:\/\/www.obigo.com\/api\/applicationmanager.getownerapplication", "required": true }, { "name": "http:\/\/www.obigo.com\/api\/vehicle", "required": true } ] },
+    "drivingRestriction":"allowed:fully",
+    "killable":true,
+    "autostart":true,
+    "running":true,
+    "reserved":false,
+    "service":false,
+    "activationStatus":true,
+    "iconWidth":200,
+    "iconHeight":200,
+    "widgetWidth":800,
+    "widgetHeight":423,
+    "activationDate":0,
+    "expirationDate":0,
+    "subscriptionStatus": 1,
+    "getStorageUsage": 0,
+    "getWidgetName": "apiTest5(launcher)"
+  },
+  "Application":{
+    "visible":true,
+    "type":1,
+    "isPopupActive":false,
+    "getStatusBarTitle":"apiTest5(launcher)",
+    "getCommonLibraryPath":"file:///home/oad/OAD/OAF/AFAsset/apps/contents/private/resources"
+  },
+  "ApplicationCollection": {
+    "length": 1,
+    "item": "file:///home/oad/OAD/OAF/AFAsset/apps/contents/private/resources"
+  },
+  "ApplicationManager": {
+    "widgets": {},
+    "getOwnerApplication": 1,
+    "getChildApplications": 1,
+    "getRunningApplications": 3,
+    "getCurrentUserId": "0",
+    "getCurrentUserName": "user_1",
+    "getCurrentUserToken": "token_user_1",
+    "getTopmostApplication": " ",
+    "getMaxMemoryUsage": 512000,
+    "getPrivacyModeStatus": true,
+  },
+  "WidgetDescriptorCollection": { 
+    "item": "Sunnie",
+    "length": 6
+  }
+}
