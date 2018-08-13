@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xml:lang="en-us" dir="ltr" id="http://www.obigo.com/widget_id/f2ab7f2b71b97577ca9a029afafaffaf4" defaultlocale="en-us" version="1.1.1" viewmodes="fullscreen" autostart="true" killable="false">
+  <icon src="icon.png"/>
+  <author href="sunnie_href" email="sunnie.shin@obigo.com">Sunnie</author>
+  <license>Sunnie</license>
+  <content src="index.html" type="text/html"/>
+  <thumbnail src="thumbnail.png"/>
+  <name short="test-app">apiTest5(launcher)</name>
+  <access origin="*"/>
+  <gadgets>
+    <gadget size="s" description="S">
+      <content src="gadgets/index.html" type="text/html"/>
+      <preview src="gadgets/icons/{@resource}/s/preview.png"/>
+    </gadget>
+  </gadgets>
+  <feature name="http://www.obigo.com/api/applicationmanager" required="true">
+    <param name="version" value="3.1.5.7"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/vehicle" required="true">
+    <param name="version" value="2.1.1.6"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/applicationmanager.widgets"/>
+  <feature name="http://www.obigo.com/api/applicationmanager.getchildapplications"/>
+  <feature name="http://www.obigo.com/api/applicationmanager.getcurrentuserid"/>
+  <feature name="http://www.obigo.com/api/applicationmanager.getusedmemory"/>
+  <feature name="http://www.obigo.com/api/applicationmanager.getmaxmemoryusage"/>
+  <feature name="http://www.obigo.com/api/applicationmanager.getprivacymodestatus"/>
+  <meta-data>
+    <manifest-version>1.2.1.1</manifest-version>
+    <store-id>COM.OBIGO.NEW.1802f4b990085c8972814a8268a2242c</store-id>
+    <driving-restriction content="allowed:fully"/>
+  </meta-data>
+</widget>
