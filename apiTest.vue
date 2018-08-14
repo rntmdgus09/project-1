@@ -6,11 +6,7 @@
         <div class="text">API</div>
         <div class="text">Actual Data</div>
         <div class="text">Expected Data</div>
-        <div class="text result">Result
-          <p style="font-size:15px">Total:{{Total}}</p>
-			    <p style="font-size:15px">Pass:{{Pass}}</p>
-			    <p style="font-size:15px">Fail:{{Fail}}</p>
-	      </div>
+        <div class="text result">Result</div>
       </obg-list-item>
     </obg-list>
 
@@ -31,14 +27,10 @@
 import doAPITest from '../store/apis.js'
 import answers from '../assets/resources/answers.json'
 import {list, listItem} from 'obigo-js-ui-rnbs/components/list'
+var Total = 0
+var Pass = 0
+var Fail = 0
 export default {
-  data: () => {
-    return {
-      Total: 0,
-      Pass: 0,
-      Fail: 0
-    }
-  },
   computed: {
     AnswerSheet: function () {
       let arr = []
@@ -61,29 +53,34 @@ export default {
   },
   methods: {
     compare: function (a, b) {
-      console.log('compare function call')
-      this.Total = this.Total + 1
+      Total = Total + 1
+      console.log('Total: ', Total)
       if (a === b) {
-        this.Pass = this.Pass + 1
+        Pass = Pass + 1
+        console.log('Pass: ', Pass)
         return true
       } else {
-        this.Fail = this.Fail + 1
+        Fail = Fail + 1
+        console.log('Fail: ', Fail)
         return false
       }
     },
     ActualResult: function (key, keys) {
       if (doAPITest[key]) {
-        var tmp = doAPITest[key][keys]
-        var wrongAnswer = 'wrongAnswer'
-        if (tmp) {
-          return tmp
-        } else {
-          return wrongAnswer
-        }
+        return doAPITest[key][keys]
       } else {
         var NoAPI = 'NoAPI'
         return NoAPI
       }
+    },
+    getTotal: function () {
+      return Total
+    },
+    getPass: function () {
+      return Pass
+    },
+    getFail: function () {
+      return Fail
     }
   }
 }
