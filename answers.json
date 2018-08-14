@@ -4,7 +4,7 @@
     "getResourceVersion":"1.1.906\n",
     "getWebLauncherVersion":"1.2.17",
     "getConnectivityActivationStatus":true
-    },
+  },
   "Util":{
     "getOSVersion":"Linux-4.4.0-31-generic",
     "getDeviceModel":"renault7p",
@@ -15,13 +15,13 @@
   },
   "WidgetDescriptor":{
     "id":"http://www.obigo.com/widget_id/f2ab7f2b71b97577ca9a029afafaffaf4",
-    "version":"1.1.1",
-    "nameList":{ "widgetName": [ { "name": "apiTest5(launcher)", "lang": "en-us" } ] },
-    "shortNameList":{ "widgetShortName": [ ] },
-    "authorName":"Sunnie",
-    "authorEmail":"Frank.koo@obigo.com",
+    "version": "1.1.2",
+    "nameList":{"widgetName": [{"name": "apiTest5(launcher)", "lang": "en-us" }]},
+    "shortNameList":{ "widgetShortName": [{"name":"test-app", "lang":"en-us"}]},
+    "authorName":"Sunnie_author",
+    "authorEmail":"sunnie.shin@obigo.com",
     "authorHref":"",
-    "license":"Sunnie",
+    "license":"Sunnie_license",
     "licenseHref":"",
     "iconSrcPath":"icon.png",
     "description":"My sample application",
@@ -46,27 +46,28 @@
     "getWidgetName": "apiTest5(launcher)"
   },
   "Application":{
-    "visible":true,
+    "visible":false,
     "type":1,
     "isPopupActive":false,
     "getStatusBarTitle":"apiTest5(launcher)",
-    "getCommonLibraryPath":"file:///home/oad/OAD/OAF/AFAsset/apps/contents/private/resources"
+    "getDescriptor" : "Sunnie",
+    "getCommonLibraryPath":"file:///home/oad/OAD/OAF/AFAsset/apps/contents/private/resources",
+    "getStorageLocation": "file:///home/oad/OAD/OAF/AFAsset/users/0/common"
   },
   "ApplicationCollection": {
     "length": 1,
     "item": "file:///home/oad/OAD/OAF/AFAsset/apps/contents/private/resources"
   },
   "ApplicationManager": {
-    "widgets": {},
+    "widgets": 6,
     "getOwnerApplication": 1,
     "getChildApplications": 1,
     "getRunningApplications": 3,
     "getCurrentUserId": "0",
     "getCurrentUserName": "user_1",
     "getCurrentUserToken": "token_user_1",
-    "getTopmostApplication": " ",
-    "getMaxMemoryUsage": 512000,
-    "getPrivacyModeStatus": true
+    "getPrivacyModeStatus": true,
+    "getCurrentUserId": "0"
   },
   "WidgetDescriptorCollection": { 
     "item": "Sunnie",
